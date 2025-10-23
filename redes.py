@@ -1,4 +1,4 @@
-class IPAddress:
+class IPAddress: #RASCUNHO, TIVE QUE MANDAR OUTRO ARQUIVO QUE FIZ O VSCODE LOCAL FINALIZADA
     def __init__(self, Ipv4:str, mascara:str):
         self.Ipv4 = Ipv4
         self.mascara = mascara
