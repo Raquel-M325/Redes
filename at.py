@@ -99,7 +99,7 @@ class IPAddress: #RESPOSTA FINAL
         rede = self.calc_rede()
         broadcast = self.calc_broadcast()
         for i in range(4):
-            if self.ip_novo_bit[i] < rede[i] or self.ip_novo_bit[i] > broadcast[i]:
+            if self.ip_novo_bit[i] <= rede[i] or self.ip_novo_bit[i] >= broadcast[i]:
                 return 'IP inválido para a rede'
         return 'IP válido para a rede'
 
@@ -120,3 +120,4 @@ class UI:
         print(ip.verificar()) 
 
 UI.menu()
+
